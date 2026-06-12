@@ -1,1 +1,2 @@
 With this project, we provide a way to temporarily recover your Linux system in case of emergencies (such as viruses). As can be understood from the project’s source code, when the /sys/trap/trap_event sysfs entry receives a single character input, the system automatically stops the network, remounts the filesystem as read-only, and triggers a kernel panic.
+Additionally, we also provide a support document for this project.
