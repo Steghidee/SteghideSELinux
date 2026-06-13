@@ -12,7 +12,7 @@ static ssize_t trap_store(struct kobject *kobj,
                           const char *buf, size_t count)
 {
     if (buf[0] == '1') {
-        printk(KERN_EMERG "Trap triggered! Emergency steps başlıyor...\n");
+        printk(KERN_EMERG "Trap triggered!\n");
 
         // 1. Root FS remount RO
         call_usermodehelper("/bin/mount",
